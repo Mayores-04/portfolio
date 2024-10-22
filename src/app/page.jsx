@@ -142,10 +142,9 @@ export default function Home() {
               {/* First Image */}
               <div className="flex-shrink-0 mb-4 lg:mb-0 lg:mr-4 w-full lg:w-1/2">
                 <Image
-                  src="/images/ge.jpg" // Update to your image path
+                  src="/images/idpic.png" 
                   className="rounded-3xl object-cover w-full h-auto"
                   alt="Graduate in cap and gown"
-                  layout="responsive"
                   width={300} 
                   height={300}
                   priority
@@ -155,10 +154,9 @@ export default function Home() {
               {/* Second Image */}
               <div className="flex-shrink-0 w-full lg:w-1/2">
                 <Image
-                  src="/images/ge.jpg" 
+                  src="/images/idpic.png" 
                   className="rounded-3xl object-cover w-full h-auto"
                   alt="Man in a suit"
-                  layout="responsive"
                   width={300} 
                   height={300}
                   priority
@@ -174,7 +172,7 @@ export default function Home() {
             {/* Project 1 */}
             <div className="container bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/ge.jpg"
+                src="/images/idpic.png"
                 alt="Project 1"
                 width={300}
                 height={300}
@@ -194,7 +192,7 @@ export default function Home() {
             {/* Project 2 */}
             <div className="container bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/ge.jpg"
+                src="/images/idpic.png"
                 alt="Project 2"
                 width={300}
                 height={300}
@@ -214,7 +212,7 @@ export default function Home() {
             {/* Project 3 */}
             <div className="container bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/ge.jpg"
+                src="/images/idpic.png"
                 alt="Project 3"
                 width={300}
                 height={300}
