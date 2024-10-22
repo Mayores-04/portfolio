@@ -34,7 +34,7 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <div className="text-[#4f85a2] font-extrabold text-4xl p-1 ml-[-30px] xl:ml-0 lg:ml-0 md:ml-0 sm:ml-0 rounded-full flex justify-center items-center text-center">
             <Image
-              src="/images/transparentLogo.png"
+              src="/images/transparentLogo.PNG"
               alt="Logo image"
               width={90}
               height={90}
