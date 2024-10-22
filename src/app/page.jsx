@@ -32,12 +32,12 @@ export default function Home() {
   };
   return (
     <>
-      <main className="playfair-display-custom flex flex-col bg-[#efede5] min-h-screen overflow-hidden scroll-smooth">
+      <main className="transition-all playfair-display-custom flex flex-col bg-[#efede5] min-h-screen overflow-hidden scroll-smooth">
         {/* Header */}
         <Header id="home" />
 
         {/* Home */}
-        <section className="flex flex-col lg:flex-row justify-center w-full lg:w-[90%] items-center mt-[40%] lg:mt-[10%] md:mt-[20%] sm:mt-[20%] text-center max-h-screen px-4 py-20 gap-6 lg:gap-9">
+        <section className="transition-all duration-300 ease-in-out flex flex-col lg:flex-row justify-center w-full lg:w-[90%] items-center mt-[40%] lg:mt-[10%] md:mt-[20%] sm:mt-[20%] text-center max-h-screen px-4 py-20 gap-6 lg:gap-9">
           <div className="text-[#375063] gap-x-px w-[90%]">
             <p className="text-3xl text-[#4f85a2] p-2">Hello, my name is</p>
             <h1 className="text-5xl md:text-6xl font-bold p-2">Jake Mayores</h1>
@@ -45,13 +45,12 @@ export default function Home() {
               {TypeEffect()}
             </h1>
 
-            <div className="w-[90%] md:w-[80%] p-2 mx-auto text-[#4f85a2]">
-              <div className="space-x-6 mt-6 flex-row">
+            <div className="w-[100%] md:w-[80%] p-2 mx-auto text-[#4f85a2]">
+              <div className="space-x-4 mt-6 flex-row">
                 <a href="https://www.facebook.com/jakejmayores" target="_blank">
                   <FontAwesomeIcon
                     icon={faFacebook}
-                    size="3x"
-                    className="FB-icon"
+                    className="FB-icon size-10"
                   />
                 </a>
                 <a
@@ -60,15 +59,13 @@ export default function Home() {
                 >
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    size="3x"
-                    className="IG-icon"
+                    className="IG-icon size-10"
                   />
                 </a>
                 <a href="https://x.com/home" target="_blank">
                   <FontAwesomeIcon
                     icon={faXTwitter}
-                    size="3x"
-                    className="T-icon"
+                    className="T-icon size-10"
                   />
                 </a>
                 <a
@@ -77,15 +74,13 @@ export default function Home() {
                 >
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    size="3x"
-                    className="LI-icon"
+                    className="LI-icon size-10"
                   />
                 </a>
                 <a href="https://github.com/Mayores04" target="_blank">
                   <FontAwesomeIcon
                     icon={faGithub}
-                    size="3x"
-                    className="GH-icon"
+                    className="GH-icon size-10"
                   />
                 </a>
               </div>
@@ -97,7 +92,7 @@ export default function Home() {
               alt="Profile Picture"
               width={500}
               height={500}
-              className="border-[#4f85a2] rounded-full"
+              className="border-[#4f85a2] rounded-full max-h-80 max-w-80"
               priority
             />
           </div>
@@ -106,9 +101,9 @@ export default function Home() {
         {/* About Section */}
         <section
           id="about"
-          className="w-full py-28 flex justify-center items-center px-4"
+          className="w-full py-28 flex justify-center items-center px-4 transition-all duration-300 ease-in-out"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center px-4 lg:px-16 pb-10 justify-center w-full lg:w-[90%] mx-auto bg-white gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2  w-[90%] md:w-[90%] items-center px-4 lg:px-16 pb-10 justify-center lg:w-[90%] mx-auto bg-white gap-8">
             <div className="text-[#375063] w-full lg:w-[90%] flex flex-col justify-center items-start pt-9">
               <h2 className="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
               <p className="text-xl md:text-3xl italic mb-4">
@@ -139,12 +134,12 @@ export default function Home() {
             </div>
 
             {/* Image Section */}
-            <div className=" h-full grid grid-flow-row items-center lg:flex lg:justify-center xl:flex-row">
+            <div className="transition-all duration-300 ease-in-out h-full grid grid-flow-row items-center lg:flex lg:justify-center xl:flex-row">
               {/* First Image */}
-              <div className="flex-shrink-0 mb-4 lg:mb-0 lg:mr-4 w-full lg:w-1/2">
+              <div className="flex-shrink-0 mb-4 lg:mb-0 lg:mr-4 w-full lg:w-1/2 flex items-center justify-center">
                 <Image
                   src="/images/idpic.PNG" 
-                  className="rounded-3xl object-cover w-full h-auto"
+                  className="rounded-3xl object-cover w-full h-auto  max-h-80 max-w-80"
                   alt="Graduate in cap and gown"
                   width={300} 
                   height={300}
@@ -153,10 +148,10 @@ export default function Home() {
               </div>
 
               {/* Second Image */}
-              <div className="flex-shrink-0 w-full lg:w-1/2">
+              <div className="flex-shrink-0 w-full lg:w-1/2 flex items-center justify-center">
                 <Image
                   src="/images/idpic.PNG" 
-                  className="rounded-3xl object-cover w-full h-auto"
+                  className="rounded-3xl object-cover w-full h-auto max-h-80 max-w-80"
                   alt="Man in a suit"
                   width={300} 
                   height={300}
@@ -168,8 +163,8 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section className="w-full py-14 px-4" id="projects">
-          <div className="flex flex-col items-center justify-center h-full px-4 py-20 gap-8">
+        <section className="w-full py-14 px-4 transition-all duration-300 ease-in-out" id="projects">
+          <div className="flex flex-col items-center justify-center h-full px-4 py-20 gap-8 ">
             {/* Project 1 */}
             <div className="container bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
               <Image
@@ -238,7 +233,7 @@ export default function Home() {
         {/* Contact Section */}
         <section
           id="contact"
-          className="flex flex-col items-center justify-center h-full px-4 py-28 gap-8"
+          className="transition-all duration-300 ease-in-out flex flex-col items-center justify-center h-full px-4 py-28 gap-8"
         >
           <div className="w-[90%] md:w-[90%] bg-white p-8 rounded-lg shadow-md">
             <div className="contacts-info flex flex-col lg:flex-row">

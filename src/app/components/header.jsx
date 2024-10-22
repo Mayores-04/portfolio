@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-[#efede5] text-[#375063] fixed w-full h-24 flex items-center justify-between px-10 shadow-md z-50 top-0">
+      <header className="transition-all bg-[#efede5] text-[#375063] fixed w-full h-24 flex items-center justify-between px-10 shadow-md z-50 top-0">
         <div className="flex items-center space-x-4">
           <div className="text-[#4f85a2] font-extrabold text-4xl p-1 ml-[-30px] xl:ml-0 lg:ml-0 md:ml-0 sm:ml-0 rounded-full flex justify-center items-center text-center">
             <Image
@@ -43,7 +43,7 @@ export default function Header() {
           </div>
         </div>
 
-        <nav className="hidden md:flex items-center space-x-6 text-lg mr-10 xl:mr-10 lg:mr-0 md:mr-0">
+        <nav className="hidden md:flex items-center space-x-6 text-lg mr-10 xl:mr-10 lg:mr-0 md:mr-0 transition-all duration-300 ease-in-out">
           <Link
             href="#home"
             className="hover:text-[#7bb1ce] text-[#375063] font-bold transition duration-300"
@@ -89,7 +89,7 @@ export default function Header() {
       </header>
 
       {isMobileMenuOpen && (
-        <nav className="fixed inset-0 bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen space-y-6 z-40">
+        <nav className="transition-all duration-300 ease-in-out fixed inset-0 bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen space-y-6 z-40">
           <Link
             href="#home"
             className="hover:text-blue-400 transition duration-300"
