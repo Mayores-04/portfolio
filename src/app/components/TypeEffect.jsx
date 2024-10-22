@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 const TypeEffect = () => {
   const strings = [
     "Front-end Web Developer",
-    "AI GOD",
+    "Computer Science Student",
   ];
 
   return (
