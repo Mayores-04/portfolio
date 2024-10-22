@@ -1,12 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+.playfair-display-custom {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Change this to your desired weight */
+  font-style: normal;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -18,4 +25,90 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-1: #665eff;
+  --clr-2: #1327c2;
+  --clr-3: #010e40;
+  --clr-4: #091735;
+  --clr-5: #060687;
+  --glow-color: rgb(54, 15, 230);
+}
+
+
+.facebook-icon{
+  color: hsl(234, 100%, 48%);
+  margin-right: -9px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.Instagram-icon {
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6225db) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+  -moz-background-clip: text;
+  background-clip: text;
+  -moz-text-fill-color: transparent !important;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 20%;
+}
+
+.twitter-icon{
+  color: hsl(0, 0%, 0%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.linkedIn-icon{
+  color: hsl(234, 100%, 60%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.facebook-icon:hover,
+.twitter-icon:hover,
+.Instagram-icon:hover,
+.linkedIn-icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+}
+
+/*Home Icons*/
+.FB-icon:hover{
+  color: hsl(234, 100%, 48%);
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.2);
+}
+
+.IG-icon:hover {
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, #6225db) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent !important;
+  -moz-background-clip: text;
+  background-clip: text;
+  -moz-text-fill-color: transparent !important;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 20%;
+  transform: scale(1.2);
+}
+
+.T-icon:hover{
+  color: hsl(0, 0%, 0%);
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.2);
+}
+
+.LI-icon:hover{
+  color: hsl(234, 100%, 60%);
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.2);
+}
+
+.GH-icon:hover{
+  color: black;
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
 }
