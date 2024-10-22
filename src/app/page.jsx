@@ -146,20 +146,22 @@ export default function Home() {
                   className="rounded-3xl object-cover w-full h-auto"
                   alt="Graduate in cap and gown"
                   layout="responsive"
-                  width={300} // Use original dimensions to maintain aspect ratio
+                  width={300} 
                   height={300}
+                  priority
                 />
               </div>
 
               {/* Second Image */}
               <div className="flex-shrink-0 w-full lg:w-1/2">
                 <Image
-                  src="/images/ge.jpg" // Update to your image path
+                  src="/images/ge.jpg" 
                   className="rounded-3xl object-cover w-full h-auto"
                   alt="Man in a suit"
                   layout="responsive"
-                  width={300} // Use original dimensions to maintain aspect ratio
+                  width={300} 
                   height={300}
+                  priority
                 />
               </div>
             </div>
