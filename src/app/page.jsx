@@ -98,6 +98,7 @@ export default function Home() {
               width={500}
               height={500}
               className="border-[#4f85a2] rounded-full"
+              priority
             />
           </div>
         </section>
@@ -177,6 +178,7 @@ export default function Home() {
                 width={300}
                 height={300}
                 className="border-2 border-black max-w-full h-auto"
+                priority
               />
               <div>
                 <h1 className="text-4xl md:text-6xl">Project 1 Title</h1>
@@ -197,6 +199,7 @@ export default function Home() {
                 width={300}
                 height={300}
                 className="border-2 border-black max-w-full h-auto"
+                priority
               />
               <div>
                 <h1 className="text-4xl md:text-6xl">Project 2 Title</h1>
@@ -217,6 +220,7 @@ export default function Home() {
                 width={300}
                 height={300}
                 className="border-2 border-black max-w-full h-auto"
+                priority
               />
               <div>
                 <h1 className="text-4xl md:text-6xl">Project 3 Title</h1>
