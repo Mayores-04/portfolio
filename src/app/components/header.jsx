@@ -121,7 +121,7 @@ export default function Header() {
           <button
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 mr-[-20px] xl:mr-0 lg:mr-0 rounded-full shadow-lg transition duration-300"
             role="button"
-            onClick={closeMobileMenu}
+            onClick={hireMeBtn}
           >
             Hire Me
           </button>

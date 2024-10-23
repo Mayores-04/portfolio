@@ -88,7 +88,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="/images/idpic.PNG"
+              src="/images/prof.jpg"
               alt="Profile Picture"
               width={500}
               height={500}
@@ -103,7 +103,7 @@ export default function Home() {
           id="about"
           className="w-full py-28 flex justify-center items-center px-4 transition-all duration-300 ease-in-out"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2  w-[90%] md:w-[90%] items-center px-4 lg:px-16 pb-10 justify-center lg:w-[90%] mx-auto bg-white gap-8">
+          <div className="grid rounded-lg grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 w-[90%] md:w-[90%] items-center px-4 lg:px-16 pb-6 justify-center lg:w-[90%] mx-auto bg-white gap-8">
             <div className="text-[#375063] w-full lg:w-[90%] flex flex-col justify-center items-start pt-9">
               <h2 className="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
               <p className="text-xl md:text-3xl italic mb-4">
@@ -134,39 +134,43 @@ export default function Home() {
             </div>
 
             {/* Image Section */}
-            <div className="transition-all duration-300 ease-in-out h-full grid grid-flow-row items-center lg:flex lg:justify-center xl:flex-row">
+            <div className="transition-all duration-300 ease-in-out h-full p-6 flex gap-8 flex-col sm:flex-col md:flex-row lg:flex-col xl:flex-row items-center justify-center">
               {/* First Image */}
-              <div className="flex-shrink-0 mb-4 lg:mb-0 lg:mr-4 w-full lg:w-1/2 flex items-center justify-center">
+              <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/images/idpic.PNG" 
-                  className="rounded-3xl object-cover w-full h-auto  max-h-80 max-w-80"
+                  src="/images/prof.jpg"
+                  className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72"
                   alt="Graduate in cap and gown"
-                  width={300} 
+                  width={300}
                   height={300}
                   priority
                 />
               </div>
 
               {/* Second Image */}
-              <div className="flex-shrink-0 w-full lg:w-1/2 flex items-center justify-center">
+              <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/images/idpic.PNG" 
-                  className="rounded-3xl object-cover w-full h-auto max-h-80 max-w-80"
+                  src="/images/prof.jpg"
+                  className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72"
                   alt="Man in a suit"
-                  width={300} 
+                  width={300}
                   height={300}
                   priority
                 />
               </div>
             </div>
+
           </div>
         </section>
 
         {/* Projects Section */}
-        <section className="w-full py-14 px-4 transition-all duration-300 ease-in-out" id="projects">
+        <section
+          className="w-full py-14 px-4 transition-all duration-300 ease-in-out"
+          id="projects"
+        >
           <div className="flex flex-col items-center justify-center h-full px-4 py-20 gap-8 ">
             {/* Project 1 */}
-            <div className="container bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
+            <div className="container rounded-lg bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
               <Image
                 src="/images/idpic.PNG"
                 alt="Project 1"
@@ -187,7 +191,7 @@ export default function Home() {
             </div>
 
             {/* Project 2 */}
-            <div className="container bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
+            <div className="container rounded-lg bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
               <Image
                 src="/images/idpic.PNG"
                 alt="Project 2"
@@ -208,7 +212,7 @@ export default function Home() {
             </div>
 
             {/* Project 3 */}
-            <div className="container bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
+            <div className="container rounded-lg bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
               <Image
                 src="/images/idpic.PNG"
                 alt="Project 3"
@@ -311,7 +315,7 @@ export default function Home() {
               </div>
 
               {/* Contact Form */}
-              <div className="contacts-right lg:w-1/2">
+              <div className="contacts-right lg:w-1/2 mt-7 xl:mt-0 lg:mt-0 md:mt-4 sm:mt-4">
                 <h1 className="text-4xl font-bold text-[#375063]">
                   Send a message
                 </h1>
