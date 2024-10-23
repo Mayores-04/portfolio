@@ -103,7 +103,7 @@ export default function Home() {
           id="about"
           className="w-full py-28 flex justify-center items-center px-4 transition-all duration-300 ease-in-out"
         >
-          <div className="grid rounded-lg grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 w-[90%] md:w-[90%] items-center px-4 lg:px-16 pb-6 justify-center lg:w-[90%] mx-auto bg-white gap-8">
+          <div className="grid rounded-lg grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 w-[90%] items-center px-4 lg:px-16 pb-6 justify-center lg:w-[90%] mx-auto bg-white gap-8">
             <div className="text-[#375063] w-full lg:w-[90%] flex flex-col justify-center items-start py-4 px-4 pt-9">
               <div className="flex mb-2 flex-col md:flex-row md:justify-center sm:justify-center justify-around items-center gap-4 md:gap-8 text-left">
                 <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
@@ -311,31 +311,32 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
             {/* Image Section */}
-            <div className="transition-all duration-300 ease-in-out h-full p-6 flex gap-8 flex-col sm:flex-col md:flex-row lg:flex-col xl:flex-row items-center justify-center">
-              {/* First Image */}
-              <div className="flex-shrink-0 flex items-center justify-center">
-                <Image
-                  src="/images/jsprom.jpg"
-                  className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72"
-                  alt="Graduate in cap and gown"
-                  width={300}
-                  height={300}
-                  priority
-                />
-              </div>
+            <div className="relative">
+              <div className="transition-all duration-300 ease-in-out h-full p-6 flex flex-col sm:flex-col md:flex-row lg:flex-row items-center justify-center gap-8">
+                {/* First Image */}
+                <div className="flex-shrink-0 flex items-center justify-center transform sm:translate-y-0 md:translate-y-0 lg:translate-y-28">
+                  <Image
+                    src="/images/jsprom.jpg"
+                    className="rounded-3xl object-cover w-48 h-48 mb-0 lg:mb-24 sm:mb-0 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72"
+                    alt="Graduate in cap and gown"
+                    width={300}
+                    height={300}
+                    priority
+                  />
+                </div>
 
-              {/* Second Image */}
-              <div className="flex-shrink-0 flex items-center justify-center ">
-                <Image
-                  src="/images/SHSgradPic.jpg"
-                  className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72 border-2 border-[#375063]"
-                  alt="Man in a suit"
-                  width={300}
-                  height={300}
-                  priority
-                />
+                {/* Second Image */}
+                <div className="flex-shrink-0 flex items-center justify-center transform sm:translate-y-0 md:translate-y-0 lg:-translate-y-12">
+                  <Image
+                    src="/images/SHSgradPic.jpg"
+                    className="rounded-3xl object-cover w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 border-2 border-[#375063]"
+                    alt="Man in a suit"
+                    width={300}
+                    height={300}
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -358,7 +359,7 @@ export default function Home() {
                 priority
               />
               <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
-              <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+                <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
                   <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
                     Portfolio
                   </h1>
@@ -491,7 +492,7 @@ export default function Home() {
                 priority
               />
               <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
-              <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+                <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
                   <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
                     Project title
                   </h1>
@@ -629,9 +630,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="flex justify-center items-center py-4 text-[#375063]">
-          <p>
-            &copy; 2024 Jake Mayores. All rights reserved.
-          </p>
+          <p>&copy; 2024 Jake Mayores. All rights reserved.</p>
         </footer>
       </main>
     </>
