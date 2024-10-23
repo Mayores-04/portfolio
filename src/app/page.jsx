@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TypeEffect from "./components/TypeEffect";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
@@ -26,6 +27,16 @@ export default function Home() {
   //   const data = await response.json();
   //   console.log('Message sent:', data);
   // };
+
+  const [isZoomPicture, setZoomPicture] = useState(null);
+
+  const toggleZoomPicture = (imageName) => {
+    if (isZoomPicture === imageName) {
+      setZoomPicture(null);
+    } else {
+      setZoomPicture(imageName);
+    }
+  };
 
   const handleSendMessage = () => {
     alert("Message sent successfully!");
@@ -92,7 +103,7 @@ export default function Home() {
               alt="Profile Picture"
               width={500}
               height={500}
-              className="border-[#4f85a2] rounded-full max-h-80 max-w-80"
+              className="glow border-[#4f85a2] rounded-full max-h-80 max-w-80"
               priority
             />
           </div>
@@ -318,25 +329,63 @@ export default function Home() {
                 <div className="flex-shrink-0 flex items-center justify-center transform sm:translate-y-0 md:translate-y-0 lg:translate-y-28">
                   <Image
                     src="/images/jsprom.jpg"
-                    className="rounded-3xl object-cover w-48 h-48 mb-0 lg:mb-24 sm:mb-0 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72"
+                    className="glow rounded-3xl object-cover w-48 h-48 mb-0 lg:mb-24 sm:mb-0 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72"
                     alt="Graduate in cap and gown"
                     width={300}
                     height={300}
+                    onClick={() => toggleZoomPicture("jsprom")}
                     priority
                   />
                 </div>
+
+                {/* Zoomed Image for JSProm */}
+                {isZoomPicture === "jsprom" && (
+                  <div
+                    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+                    onClick={() => toggleZoomPicture(null)}
+                  >
+                    <Image
+                      src="/images/jsprom.jpg"
+                      className="glow rounded-3xl object-cover w-96 h-auto"
+                      alt="my JSProm Picture"
+                      width={300}
+                      height={300}
+                      onClick={() => toggleZoomPicture("jsprom")}
+                      priority
+                    />
+                  </div>
+                )}
 
                 {/* Second Image */}
                 <div className="flex-shrink-0 flex items-center justify-center transform sm:translate-y-0 md:translate-y-0 lg:-translate-y-12">
                   <Image
                     src="/images/SHSgradPic.jpg"
-                    className="rounded-3xl object-cover w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 border-2 border-[#375063]"
-                    alt="Man in a suit"
+                    className="glow rounded-3xl object-cover w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 border-2 border-[#375063]"
+                    alt="My Graduation Picture"
                     width={300}
                     height={300}
+                    onClick={() => toggleZoomPicture("shsgrad")}
                     priority
                   />
                 </div>
+
+                {/* Zoomed Image for SHSGrad */}
+                {isZoomPicture === "shsgrad" && (
+                  <div
+                    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+                    onClick={() => toggleZoomPicture(null)}
+                  >
+                    <Image
+                      src="/images/SHSgradPic.jpg"
+                      className="glow rounded-3xl object-cover w-96 h-auto"
+                      alt="Graduate in cap and gown"
+                      width={300}
+                      height={300}
+                      onClick={() => toggleZoomPicture("shsgrad")}
+                      priority
+                    />
+                  </div>
+                )}
               </div>
             </div>
           </div>

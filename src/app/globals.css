@@ -112,3 +112,12 @@ html {
   transform: scale(1.2);
   transition: transform 0.4s ease-in-out;
 }
+
+.glow {
+  box-shadow: 0 0 10px rgba(55, 80, 99, 0.7), 0 0 20px rgba(55, 80, 99, 0.5), 0 0 30px rgba(55, 80, 99, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow:hover {
+  box-shadow: 0 0 20px rgba(55, 80, 99, 1), 0 0 30px rgba(55, 80, 99, 0.7), 0 0 40px rgba(55, 80, 99, 0.5);
+}
