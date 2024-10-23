@@ -106,31 +106,202 @@ export default function Home() {
           <div className="grid rounded-lg grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 w-[90%] md:w-[90%] items-center px-4 lg:px-16 pb-6 justify-center lg:w-[90%] mx-auto bg-white gap-8">
             <div className="text-[#375063] w-full lg:w-[90%] flex flex-col justify-center items-start pt-9">
               <h2 className="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
-              <p className="text-xl md:text-3xl italic mb-4">
+              <p className="text-xl md:text-[1.7rem] italic mb-4">
                 "I am a 2nd-year college computer science student specializing
                 in Front-end web development."
               </p>
               <p className="mb-4">
-                Hello! I’m a passionate Front-End Web Developer with a strong
-                Computer Science background. Skilled in HTML, CSS, JavaScript,
-                ReactJS, NodeJS, and TailwindCSS, I have gained valuable
-                experience through freelance web development and as a front-end
-                developer in my school organization. Currently, I am exploring
-                React development to create dynamic and interactive web
-                applications.
+                I’m a passionate Front-End Web Developer with a strong Computer
+                Science background. Skilled in HTML, CSS, JavaScript, C# and
+                familiar with ReactJS, NodeJS, and TailwindCSS, I have gained
+                valuable experience through freelance web development and as a
+                front-end web developer in my school organization. Currently, I
+                am exploring NextJS development to create dynamic and
+                interactive web applications.
               </p>
-              <p className="mb-4">
-                My goal is to deliver high-quality, visually appealing user
-                interfaces that enhance user experience. I thrive on the
-                challenge of transforming complex concepts into intuitive
-                designs, ensuring that each project is both functional and
-                aesthetically pleasing.
-              </p>
-              <p>
-                I am always eager to learn and grow, so if you’re interested in
-                collaborating or just want to chat about technology, feel free
-                to reach out!
-              </p>
+
+              <div>
+                <h3 align="left" className="font-bold text-2xl mb-2">
+                  Languages and Tools:
+                </h3>
+                <p className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 justify-center items-center">
+                  {/* HTML 5 */}
+                  <a
+                    href="https://www.w3.org/html/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                      alt="html5"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* CSS */}
+                  <a
+                    href="https://www.w3schools.com/css/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                      alt="css3"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* JavaScript */}
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                      alt="javascript"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Git */}
+                  <a
+                    href="https://git-scm.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                      alt="git"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* CSharp */}
+                  <a
+                    href="https://www.w3schools.com/cs/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+                      alt="csharp"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Java */}
+                  <a
+                    href="https://www.java.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                      alt="java"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                </p>
+              </div>
+
+              <div>
+                <h3 align="left" className="font-bold text-2xl mb-2 mt-2">
+                  Currently Learning with ff tools and languages:
+                </h3>
+                <p className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 justify-center items-center">
+                  {/* ReactJS */}
+                  <a
+                    href="https://reactjs.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                      alt="react"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+
+                  {/* Next.js */}
+                  <a
+                    href="https://nextjs.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+                      alt="nextjs"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Figma */}
+                  <a
+                    href="https://www.figma.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                      alt="figma"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+
+                  {/* MongoDB */}
+                  <a
+                    href="https://www.mongodb.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                      alt="mongodb"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Node.js */}
+                  <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                      alt="nodejs"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Python */}
+                  <a
+                    href="https://www.python.org"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                      alt="python"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Tailwind CSS */}
+                  <a
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                      alt="tailwind"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                </p>
+              </div>
             </div>
 
             {/* Image Section */}
@@ -138,7 +309,7 @@ export default function Home() {
               {/* First Image */}
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/images/prof.jpg"
+                  src="/images/SHSgradPic.jpg"
                   className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72"
                   alt="Graduate in cap and gown"
                   width={300}
@@ -148,10 +319,10 @@ export default function Home() {
               </div>
 
               {/* Second Image */}
-              <div className="flex-shrink-0 flex items-center justify-center">
+              <div className="flex-shrink-0 flex items-center justify-center ">
                 <Image
-                  src="/images/prof.jpg"
-                  className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72"
+                  src="/images/idpic.PNG"
+                  className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72 border-2 border-[#375063]"
                   alt="Man in a suit"
                   width={300}
                   height={300}
@@ -159,7 +330,6 @@ export default function Home() {
                 />
               </div>
             </div>
-
           </div>
         </section>
 
@@ -168,67 +338,164 @@ export default function Home() {
           className="w-full py-14 px-4 transition-all duration-300 ease-in-out"
           id="projects"
         >
-          <div className="flex flex-col items-center justify-center h-full px-4 py-20 gap-8 ">
+          <div className="flex flex-col items-center justify-center h-full px-4 py-20 gap-8">
             {/* Project 1 */}
-            <div className="container rounded-lg bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
+            <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/idpic.PNG"
-                alt="Project 1"
-                width={300}
-                height={300}
-                className="border-2 border-black max-w-full h-auto"
+                src="/images/Portfolio.PNG"
+                alt="MovieMunch System"
+                width={600}
+                height={700}
+                className="border-2 border-black w-full h-auto max-w-md"
                 priority
               />
-              <div>
-                <h1 className="text-4xl md:text-6xl">Project 1 Title</h1>
-                <p className="mt-4 text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Impedit officia deleniti suscipit adipisci? Possimus optio
-                  vitae deleniti tempore repellat, consequatur doloremque, sit
-                  laborum eaque ex minima placeat ducimus quaerat a.
+              <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
+                <div className="flex justify-between w-full">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl ">
+                    Portfolio
+                  </h1>
+
+                  <button className="bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 ">
+                    See Live
+                  </button>
+                </div>
+                <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
+                  Explore my personal portfolio, showcasing my journey as a
+                  computer science student and aspiring software developer. This
+                  website highlights my skills, projects, and experiences in the
+                  field of technology.
                 </p>
+                <h3 className="flex gap-6 font-bold text-sm mt-8 sm:text-lg md:text-md text-left lg:text-2xl xl:text-2xl mb-2">
+                  Tools and Library:
+                  {/* Tailwind CSS */}
+                  <a
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                      alt="tailwind"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* JavaScript */}
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                      alt="javascript"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Next.js */}
+                  <a
+                    href="https://nextjs.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+                      alt="nextjs"
+                      width="50"
+                      height="50"
+                      className="h-10 w-16"
+                    />
+                  </a>
+                </h3>
               </div>
             </div>
 
             {/* Project 2 */}
-            <div className="container rounded-lg bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
+            <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/idpic.PNG"
-                alt="Project 2"
-                width={300}
-                height={300}
-                className="border-2 border-black max-w-full h-auto"
+                src="/images/MovieMunch.PNG"
+                alt="MovieMunch System"
+                width={600}
+                height={700}
+                className="border-2 border-black w-full h-auto max-w-md"
                 priority
               />
-              <div>
-                <h1 className="text-4xl md:text-6xl">Project 2 Title</h1>
-                <p className="mt-4 text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Impedit officia deleniti suscipit adipisci? Possimus optio
-                  vitae deleniti tempore repellat, consequatur doloremque, sit
-                  laborum eaque ex minima placeat ducimus quaerat a.
+              <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
+                <div className="flex justify-between  w-full">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                    MovieMunch System
+                  </h1>
+
+                  <button className="bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 ">
+                    See Live
+                  </button>
+                </div>
+                <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
+                  The MovieMunch System is an innovative desktop application
+                  designed to enhance the cinema experience for users. This
+                  platform allows customers to seamlessly book movie tickets and
+                  pre-order snacks and beverages at MovieMunch Cinemas.
                 </p>
+                <h3 className="flex gap-6 font-bold text-sm mt-8 sm:text-lg md:text-md text-left lg:text-2xl xl:text-2xl mb-2">
+                  Tools and Library:
+                  {/* CSharp */}
+                  <a
+                    href="https://www.w3schools.com/cs/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+                      alt="csharp"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* MongoDB */}
+                  <a
+                    href="https://www.mongodb.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                      alt="mongodb"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                </h3>
               </div>
             </div>
 
             {/* Project 3 */}
-            <div className="container rounded-lg bg-gray-600 w-[90%] md:w-[90%] flex flex-col md:flex-row items-center text-center p-4 gap-6">
+            <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/idpic.PNG"
+                src="/images/MovieMunch.PNG"
                 alt="Project 3"
-                width={300}
-                height={300}
-                className="border-2 border-black max-w-full h-auto"
+                width={600}
+                height={700}
+                className="border-2 border-black w-full h-auto max-w-md"
                 priority
               />
-              <div>
-                <h1 className="text-4xl md:text-6xl">Project 3 Title</h1>
-                <p className="mt-4 text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Impedit officia deleniti suscipit adipisci? Possimus optio
-                  vitae deleniti tempore repellat, consequatur doloremque, sit
-                  laborum eaque ex minima placeat ducimus quaerat a.
+              <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
+                <div className="flex justify-between w-full">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                    Project Title / App name
+                  </h1>
+
+                  <button className="bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 ">
+                    See Live
+                  </button>
+                </div>
+                <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
+                  Short Description
                 </p>
+                <h3 className="flex gap-6 font-bold text-sm mt-8 sm:text-lg md:text-md text-left lg:text-2xl xl:text-2xl mb-2">
+                  Tools and Library:
+                  {/*  */}
+                </h3>
               </div>
             </div>
           </div>
