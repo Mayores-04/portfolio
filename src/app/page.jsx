@@ -97,7 +97,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>
+          <div onClick={() => toggleZoomPicture("prof")}>
             <Image
               src="/images/prof.jpg"
               alt="Profile Picture"
@@ -107,6 +107,23 @@ export default function Home() {
               priority
             />
           </div>
+
+          {/* Zoomed Image */}
+          {isZoomPicture === "prof" && (
+            <div
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+              onClick={() => toggleZoomPicture(null)} 
+            >
+              <Image
+                src="/images/prof.jpg"
+                alt="Profile Picture"
+                width={500}
+                height={500}
+                className="glow border-[#4f85a2] rounded-full w-96 h-auto"
+                priority
+              />
+            </div>
+          )}
         </section>
 
         {/* About Section */}
@@ -330,7 +347,7 @@ export default function Home() {
                   <Image
                     src="/images/jsprom.jpg"
                     className="glow rounded-3xl object-cover w-48 h-48 mb-0 lg:mb-24 sm:mb-0 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72"
-                    alt="Graduate in cap and gown"
+                    alt="my SHS js prom picture"
                     width={300}
                     height={300}
                     onClick={() => toggleZoomPicture("jsprom")}
@@ -347,7 +364,7 @@ export default function Home() {
                     <Image
                       src="/images/jsprom.jpg"
                       className="glow rounded-3xl object-cover w-96 h-auto"
-                      alt="my JSProm Picture"
+                      alt="my SHS js prom picture"
                       width={300}
                       height={300}
                       onClick={() => toggleZoomPicture("jsprom")}
@@ -361,7 +378,7 @@ export default function Home() {
                   <Image
                     src="/images/SHSgradPic.jpg"
                     className="glow rounded-3xl object-cover w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 border-2 border-[#375063]"
-                    alt="My Graduation Picture"
+                    alt="my SHS grad picture"
                     width={300}
                     height={300}
                     onClick={() => toggleZoomPicture("shsgrad")}
@@ -378,7 +395,7 @@ export default function Home() {
                     <Image
                       src="/images/SHSgradPic.jpg"
                       className="glow rounded-3xl object-cover w-96 h-auto"
-                      alt="Graduate in cap and gown"
+                      alt="my SHS grad picture"
                       width={300}
                       height={300}
                       onClick={() => toggleZoomPicture("shsgrad")}
