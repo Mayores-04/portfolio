@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TypeEffect from "./components/TypeEffect";
-
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faInstagram,
@@ -104,8 +104,16 @@ export default function Home() {
           className="w-full py-28 flex justify-center items-center px-4 transition-all duration-300 ease-in-out"
         >
           <div className="grid rounded-lg grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 w-[90%] md:w-[90%] items-center px-4 lg:px-16 pb-6 justify-center lg:w-[90%] mx-auto bg-white gap-8">
-            <div className="text-[#375063] w-full lg:w-[90%] flex flex-col justify-center items-start pt-9">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
+            <div className="text-[#375063] w-full lg:w-[90%] flex flex-col justify-center items-start py-4 px-4 pt-9">
+              <div className="flex mb-2 flex-col md:flex-row md:justify-center sm:justify-center justify-around items-center gap-4 md:gap-8 text-left">
+                <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
+                <div className="bg-gray-700  text-white px-6 py-3 text-sm md:text-base rounded-lg shadow-md hover:bg-gray-800">
+                  <a href="Resume.pdf" title="Resume" download="Resume.pdf">
+                    Download CV
+                  </a>
+                </div>
+              </div>
+
               <p className="text-xl md:text-[1.7rem] italic mb-4">
                 "I am a 2nd-year college computer science student specializing
                 in Front-end web development."
@@ -208,7 +216,7 @@ export default function Home() {
 
               <div>
                 <h3 align="left" className="font-bold text-2xl mb-2 mt-2">
-                  Currently Learning with ff tools and languages:
+                  Familiarity with the following:
                 </h3>
                 <p className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 justify-center items-center">
                   {/* ReactJS */}
@@ -309,7 +317,7 @@ export default function Home() {
               {/* First Image */}
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/images/SHSgradPic.jpg"
+                  src="/images/jsprom.jpg"
                   className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72"
                   alt="Graduate in cap and gown"
                   width={300}
@@ -321,7 +329,7 @@ export default function Home() {
               {/* Second Image */}
               <div className="flex-shrink-0 flex items-center justify-center ">
                 <Image
-                  src="/images/idpic.PNG"
+                  src="/images/SHSgradPic.jpg"
                   className="rounded-3xl object-cover w-full h-auto max-h-72 max-w-72 border-2 border-[#375063]"
                   alt="Man in a suit"
                   width={300}
@@ -335,10 +343,10 @@ export default function Home() {
 
         {/* Projects Section */}
         <section
-          className="w-full py-14 px-4 transition-all duration-300 ease-in-out"
+          className="w-full py-14 px-4 transition-all duration-300  flex justify-center items-center  ease-in-out"
           id="projects"
         >
-          <div className="flex flex-col items-center justify-center h-full px-4 py-20 gap-8">
+          <div className="flex flex-col items-center justify-center  w-full lg:w-[90%] h-full px-4 py-20 gap-8 bg-blue-200 rounded-xl">
             {/* Project 1 */}
             <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
@@ -346,17 +354,18 @@ export default function Home() {
                 alt="MovieMunch System"
                 width={600}
                 height={700}
-                className="border-2 border-black w-full h-auto max-w-md"
+                className="rounded-md w-full h-auto max-w-md"
                 priority
               />
               <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
-                <div className="flex justify-between w-full">
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl ">
+              <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
                     Portfolio
                   </h1>
 
-                  <button className="bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 ">
-                    See Live
+                  <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
+                    <FontAwesomeIcon icon={faEye} className="mr-2" />
+                    <a href="">See Live</a>
                   </button>
                 </div>
                 <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
@@ -418,19 +427,21 @@ export default function Home() {
                 alt="MovieMunch System"
                 width={600}
                 height={700}
-                className="border-2 border-black w-full h-auto max-w-md"
+                className="rounded-md w-full h-auto max-w-md"
                 priority
               />
               <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
-                <div className="flex justify-between  w-full">
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
                     MovieMunch System
                   </h1>
 
-                  <button className="bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 ">
+                  <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
+                    <FontAwesomeIcon icon={faEye} className="mr-2" />
                     See Live
                   </button>
                 </div>
+
                 <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
                   The MovieMunch System is an innovative desktop application
                   designed to enhance the cinema experience for users. This
@@ -476,16 +487,17 @@ export default function Home() {
                 alt="Project 3"
                 width={600}
                 height={700}
-                className="border-2 border-black w-full h-auto max-w-md"
+                className="rounded-md w-full h-auto max-w-md"
                 priority
               />
               <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
-                <div className="flex justify-between w-full">
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-                    Project Title / App name
+              <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+                    Project title
                   </h1>
 
-                  <button className="bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-800 ">
+                  <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
+                    <FontAwesomeIcon icon={faEye} className="mr-2" />
                     See Live
                   </button>
                 </div>
@@ -618,7 +630,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="flex justify-center items-center py-4 text-[#375063]">
           <p>
-            &copy; {new Date().getFullYear()} Jake Mayores. All rights reserved.
+            &copy; 2024 Jake Mayores. All rights reserved.
           </p>
         </footer>
       </main>
