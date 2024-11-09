@@ -57,7 +57,7 @@ export default function Home() {
         {/* AI bot */}
         <div
           onClick={toggleIframe}
-          className="fixed bottom-5 right-5 w-16 h-16 rounded-full bg-blue-500 text-white flex justify-center items-center cursor-pointer shadow-lg z-10"
+          className="fixed bottom-5 right-5 w-16 h-16 rounded-full bg-blue-500 text-white flex justify-center items-center cursor-pointer shadow-lg z-20"
         >
           {isIframeVisible ? (
             <span className="text-3xl">x</span>
@@ -67,18 +67,27 @@ export default function Home() {
         </div>
 
         {isIframeVisible && (
-          <iframe
-            src="https://www.chatbase.co/chatbot-iframe/ltaQuM2P6evo--Z6_GHc5"
-            className="w-full max-w-[500px] h-auto fixed bottom-20 left-1/2 transform -translate-x-1/2 z-9"
+          <div
+            className="w-full max-w-[500px] fixed bottom-20 left-1/2 transform -translate-x-1/2 z-10"
             style={{
-              minHeight: "600px",
-              maxWidth: "500px",
-              border: "1px solid #ccc",
-              marginBottom: "-120px",
-              zIndex: 1000,
+              height: "550px",
+              overflow: "hidden",
             }}
-            frameBorder="0"
-          />
+          >
+            <iframe
+              src="https://www.chatbase.co/chatbot-iframe/ltaQuM2P6evo--Z6_GHc5"
+              className="w-full h-auto"
+              style={{
+                minHeight: "600px",
+                height: "600px",
+                maxWidth: "500px",
+                border: "1px solid #ccc",
+                marginBottom: "10px",
+                zIndex: 10,
+              }}
+              frameBorder="0"
+            />
+          </div>
         )}
 
         {/* Home */}
