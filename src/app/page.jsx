@@ -54,7 +54,7 @@ export default function Home() {
         {/* Header */}
         <Header id="home" />
 
-        {/* AI bot */}
+        {/* AI Assistant bot */}
         <div
           onClick={toggleIframe}
           className="fixed bottom-5 right-5 w-16 h-16 rounded-full bg-blue-500 text-white flex justify-center items-center cursor-pointer shadow-lg z-20"
@@ -89,6 +89,7 @@ export default function Home() {
             />
           </div>
         )}
+
 
         {/* Home */}
         <section className="transition-all duration-300 ease-in-out flex flex-col lg:flex-row justify-center w-full lg:w-[90%] items-center mt-[40%] lg:mt-[10%] md:mt-[20%] sm:mt-[20%] text-center max-h-screen px-4 py-20 gap-6 lg:gap-9">
