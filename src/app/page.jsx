@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TypeEffect from "./components/TypeEffect";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faEye, faCommentDots } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faInstagram,
@@ -41,11 +41,45 @@ export default function Home() {
   const handleSendMessage = () => {
     alert("Message sent successfully!");
   };
+
+  const [isIframeVisible, setIsIframeVisible] = useState(false);
+
+  const toggleIframe = () => {
+    setIsIframeVisible((prevVisible) => !prevVisible);
+  };
+
   return (
     <>
       <main className="transition-all playfair-display-custom flex flex-col bg-[#efede5] min-h-screen overflow-hidden scroll-smooth">
         {/* Header */}
         <Header id="home" />
+
+        {/* AI bot */}
+        <div
+          onClick={toggleIframe}
+          className="fixed bottom-5 right-5 w-16 h-16 rounded-full bg-blue-500 text-white flex justify-center items-center cursor-pointer shadow-lg z-10"
+        >
+          {isIframeVisible ? (
+            <span className="text-3xl">x</span>
+          ) : (
+            <FontAwesomeIcon icon={faCommentDots} className="text-xl" />
+          )}
+        </div>
+
+        {isIframeVisible && (
+          <iframe
+            src="https://www.chatbase.co/chatbot-iframe/ltaQuM2P6evo--Z6_GHc5"
+            className="w-full max-w-[500px] h-auto fixed bottom-20 left-1/2 transform -translate-x-1/2 z-9"
+            style={{
+              minHeight: "600px",
+              maxWidth: "500px",
+              border: "1px solid #ccc",
+              marginBottom: "-120px",
+              zIndex: 1000,
+            }}
+            frameBorder="0"
+          />
+        )}
 
         {/* Home */}
         <section className="transition-all duration-300 ease-in-out flex flex-col lg:flex-row justify-center w-full lg:w-[90%] items-center mt-[40%] lg:mt-[10%] md:mt-[20%] sm:mt-[20%] text-center max-h-screen px-4 py-20 gap-6 lg:gap-9">
@@ -112,7 +146,7 @@ export default function Home() {
           {isZoomPicture === "prof" && (
             <div
               className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
-              onClick={() => toggleZoomPicture(null)} 
+              onClick={() => toggleZoomPicture(null)}
             >
               <Image
                 src="/images/prof.jpg"
@@ -135,11 +169,32 @@ export default function Home() {
             <div className="text-[#375063] w-full lg:w-[90%] flex flex-col justify-center items-start py-4 px-4 pt-9">
               <div className="flex mb-2 flex-col md:flex-row md:justify-center sm:justify-center justify-around items-center gap-4 md:gap-8 text-left">
                 <h2 className="text-3xl md:text-5xl font-bold">About Me</h2>
-                <div className="bg-gray-700  text-white px-6 py-3 text-sm md:text-base rounded-lg shadow-md hover:bg-gray-800">
-                  <a href="Resume.pdf" title="Resume" download="Resume.pdf">
+                <div className="bg-gray-700 text-white px-6 py-3 text-sm md:text-base rounded-lg shadow-md hover:bg-gray-800">
+                  <a
+                    href="Resume.pdf"
+                    title="Resume"
+                    download="Resume.pdf"
+                    onClick={() => toggleZoomPicture("resume")}
+                  >
                     Download CV
                   </a>
                 </div>
+
+                {/* Zoomed Image for Resume */}
+                {isZoomPicture === "resume" && (
+                  <div
+                    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+                    onClick={() => toggleZoomPicture(null)}
+                  >
+                    <img
+                      src="/images/resume.png"
+                      alt="Resume"
+                      width={800}
+                      height={600}
+                      className="glow border-[#4f85a2] rounded-lg w-auto h-auto"
+                    />
+                  </div>
+                )}
               </div>
 
               <p className="text-xl md:text-[1.7rem] italic mb-4">
