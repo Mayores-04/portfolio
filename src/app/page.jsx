@@ -75,7 +75,7 @@ export default function Home() {
             }}
           >
             <iframe
-              src="https://www.chatbase.co/chatbot-iframe/ltaQuM2P6evo--Z6_GHc5"
+              src="https://www.chatbase.co/chatbot-iframe/mlAVzhAEQqIzEDy-u0sFR"
               className="w-full h-auto"
               style={{
                 minHeight: "600px",
