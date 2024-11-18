@@ -679,7 +679,8 @@ export default function Home() {
                     />
                   </a>
                 </h3>
-              </div>
+              </div> 
+              
             </div>
 
             {/* Project 4 */}
