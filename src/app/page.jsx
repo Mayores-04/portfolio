@@ -90,7 +90,6 @@ export default function Home() {
           </div>
         )}
 
-
         {/* Home */}
         <section className="transition-all duration-300 ease-in-out flex flex-col lg:flex-row justify-center w-full lg:w-[90%] items-center mt-[40%] lg:mt-[10%] md:mt-[20%] sm:mt-[20%] text-center max-h-screen px-4 py-20 gap-6 lg:gap-9">
           <div className="text-[#375063] gap-x-px w-[90%]">
@@ -521,19 +520,6 @@ export default function Home() {
                       height="50"
                     />
                   </a>
-                  {/* JavaScript */}
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                      alt="javascript"
-                      width="50"
-                      height="50"
-                    />
-                  </a>
                   {/* Next.js */}
                   <a
                     href="https://nextjs.org/"
@@ -551,8 +537,91 @@ export default function Home() {
                 </h3>
               </div>
             </div>
-
             {/* Project 2 */}
+            <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
+              <Image
+                src="/images/TaskFlowPic.PNG"
+                alt="MovieMunch System"
+                width={600}
+                height={700}
+                className="rounded-md w-full h-auto max-w-md"
+                priority
+              />
+              <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
+                <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
+                    TaskFlow
+                  </h1>
+
+                  <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
+                    <FontAwesomeIcon icon={faEye} className="mr-2" />
+                    See Live
+                  </button>
+                </div>
+
+                <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
+                  (Ongoing) TaskFlow: Streamline your productivity with an
+                  intuitive task management system. Organize, prioritize, and
+                  track your tasks effortlessly to stay on top of your goals.
+                </p>
+                <h3 className="flex gap-6 font-bold text-sm mt-8 sm:text-lg md:text-md text-left lg:text-2xl xl:text-2xl mb-2">
+                  Tools and Library:
+                  {/* NextJs */}
+                  <a
+                    href="https://nextjs.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+                      alt="nextjs"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Figma */}
+                  <a
+                    href="https://www.figma.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                      alt="figma"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Tailwind CSS */}
+                  <a
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                      alt="tailwind"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* MongoDB */}
+                  <a
+                    href="https://www.mongodb.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                      alt="mongodb"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                </h3>
+              </div>
+            </div>
+            {/* Project 3 */}
             <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
                 src="/images/MovieMunch.PNG"
@@ -575,10 +644,11 @@ export default function Home() {
                 </div>
 
                 <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
-                  The MovieMunch System is an innovative desktop application
-                  designed to enhance the cinema experience for users. This
-                  platform allows customers to seamlessly book movie tickets and
-                  pre-order snacks and beverages at MovieMunch Cinemas.
+                  (Ongoing) The MovieMunch System is an innovative desktop
+                  application designed to enhance the cinema experience for
+                  users. This platform allows customers to seamlessly book movie
+                  tickets and pre-order snacks and beverages at MovieMunch
+                  Cinemas.
                 </p>
                 <h3 className="flex gap-6 font-bold text-sm mt-8 sm:text-lg md:text-md text-left lg:text-2xl xl:text-2xl mb-2">
                   Tools and Library:
@@ -612,10 +682,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project 3 */}
+            {/* Project 4 */}
             <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/MovieMunch.PNG"
+                src="/images/ParkHubPic.PNG"
                 alt="Project 3"
                 width={600}
                 height={700}
@@ -625,7 +695,7 @@ export default function Home() {
               <div className="flex flex-col items-start w-full xl:w-[100%] lg:w-[95%] md:w-[80%] sm:w-[90%] text-justify">
                 <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
                   <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
-                    Project title
+                    ParkHub Website
                   </h1>
 
                   <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
@@ -634,11 +704,51 @@ export default function Home() {
                   </button>
                 </div>
                 <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
-                  Short Description
+                  (Ongoing) ParkHub: Your ultimate destination for hassle-free
+                  parking. Discover, reserve, and manage parking spaces with
+                  ease. Simplify your parking experience today!
                 </p>
                 <h3 className="flex gap-6 font-bold text-sm mt-8 sm:text-lg md:text-md text-left lg:text-2xl xl:text-2xl mb-2">
                   Tools and Library:
-                  {/*  */}
+                  {/* NextJs */}
+                  <a
+                    href="https://nextjs.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+                      alt="nextjs"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Figma */}
+                  <a
+                    href="https://www.figma.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
+                      alt="figma"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
+                  {/* Tailwind CSS */}
+                  <a
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                      alt="tailwind"
+                      width="50"
+                      height="50"
+                    />
+                  </a>
                 </h3>
               </div>
             </div>
