@@ -540,7 +540,7 @@ export default function Home() {
             {/* Project 2 */}
             <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/TaskFlowPic.PNG"
+                src="/images/TaskFlowPic.png"
                 alt="TaskFlow Overview"
                 width={600}
                 height={700}
@@ -686,7 +686,7 @@ export default function Home() {
             {/* Project 4 */}
             <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
-                src="/images/ParkHubPic.PNG"
+                src="/images/ParkHubPic.png"
                 alt="ParkHub Overview"
                 width={600}
                 height={700}
