@@ -541,7 +541,7 @@ export default function Home() {
             <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
                 src="/images/TaskFlowPic.PNG"
-                alt="MovieMunch System"
+                alt="TaskFlow Overview"
                 width={600}
                 height={700}
                 className="rounded-md w-full h-auto max-w-md"
@@ -687,7 +687,7 @@ export default function Home() {
             <div className="container rounded-lg bg-gray-600 w-full md:w-[90%] flex flex-col lg:flex-row items-center text-center p-4 gap-6">
               <Image
                 src="/images/ParkHubPic.PNG"
-                alt="Project 3"
+                alt="ParkHub Overview"
                 width={600}
                 height={700}
                 className="rounded-md w-full h-auto max-w-md"
