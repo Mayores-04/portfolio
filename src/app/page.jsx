@@ -575,7 +575,7 @@ export default function Home() {
                     <img
                       src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
                       alt="nextjs"
-                      width="50"
+                      width="50"  
                       height="50"
                     />
                   </a>
