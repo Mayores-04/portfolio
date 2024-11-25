@@ -701,7 +701,9 @@ export default function Home() {
 
                   <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
                     <FontAwesomeIcon icon={faEye} className="mr-2" />
-                    See Live
+                    <a href="https://park-hub-two.vercel.app/" target="_blank">
+                      See Live
+                    </a>
                   </button>
                 </div>
                 <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
