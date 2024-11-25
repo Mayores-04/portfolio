@@ -575,7 +575,7 @@ export default function Home() {
                     <img
                       src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
                       alt="nextjs"
-                      width="50"  
+                      width="50"
                       height="50"
                     />
                   </a>
@@ -679,8 +679,7 @@ export default function Home() {
                     />
                   </a>
                 </h3>
-              </div> 
-              
+              </div>
             </div>
 
             {/* Project 4 */}
@@ -699,12 +698,12 @@ export default function Home() {
                     ParkHub Website
                   </h1>
 
-                  <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
-                    <FontAwesomeIcon icon={faEye} className="mr-2" />
-                    <a href="https://park-hub-two.vercel.app/" target="_blank">
+                  <a href="https://park-hub-two.vercel.app/" target="_blank">
+                    <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
+                      <FontAwesomeIcon icon={faEye} className="mr-2" />
                       See Live
-                    </a>
-                  </button>
+                    </button>
+                  </a>
                 </div>
                 <p className="mt-4 text-white text-sm md:text-base lg:text-lg xl:text-xl">
                   (Ongoing) ParkHub: Your ultimate destination for hassle-free
