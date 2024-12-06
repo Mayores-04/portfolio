@@ -698,7 +698,7 @@ export default function Home() {
                     ParkHub Website
                   </h1>
 
-                  <a href="https://park-hub-two.vercel.app/" target="_blank">
+                  <a href="https://park-hub-website.vercel.app/" target="_blank">
                     <button className="bg-gray-700 text-white flex items-center px-4 py-2 rounded-lg shadow-md hover:bg-gray-800">
                       <FontAwesomeIcon icon={faEye} className="mr-2" />
                       See Live
